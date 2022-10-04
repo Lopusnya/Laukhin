@@ -13,7 +13,7 @@ try:
         if dc.isdigit():
             v = 100/int(dc) * 3.3
             print(v, "B")
-            a=GP.PWM(pin,dc)
+            a=GP.PWM(pin,1000)
             a.start(dc)
             input("Нажми enter чтобы остановить ШИМ")
             a.stop()
